@@ -1,8 +1,8 @@
 debug: true
 
-build:
-  image: golang
-  commands:
-    - go get
-    - go build
-    - go test
+pipeline:
+  build:
+    image: golang
+    commands:
+      - go build
+      - go test
